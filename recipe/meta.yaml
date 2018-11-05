@@ -1,6 +1,6 @@
 {% set name = "django-controlcenter" %}
-{% set version = "0.2.6" %}
-{% set sha256 = "784bd00db3262d647bd8fbe7a687b243bda74321bcd82f24fa7308e76af948eb" %}
+{% set version = "0.2.7" %}
+{% set sha256 = "96497230199585ddd9e72d449cfd2acc444f8590af8463d36e9fce471abde69d" %}
 
 package:
   name: {{ name|lower }}
