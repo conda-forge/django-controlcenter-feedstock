@@ -1,6 +1,6 @@
 {% set name = "django-controlcenter" %}
-{% set version = "0.2.9" %}
-{% set sha256 = "cbf68825385ba3f0ce09cd425740db159648a68182ca7f25cd055d3464b8e853" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "50e24e1b372131a5a89cf952c504775fab7f53cda78d8911c2e4f637ed7b7cba" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -37,9 +37,8 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Set of widgets to build dashboards for Django projects'
-  description: 
-    Set of widgets to build dashboards for Django projects
+  summary: Set of widgets to build dashboards for Django projects
+  description: Set of widgets to build dashboards for Django projects
   doc_url: http://django-controlcenter.readthedocs.io/en/stable/
   dev_url: https://github.com/byashimov/django-controlcenter
 
